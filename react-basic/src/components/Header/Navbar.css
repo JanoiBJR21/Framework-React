@@ -1,0 +1,28 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 48px;
+    padding: 8px;
+}
+.logo{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    margin: 12px;
+}
+a{
+    color: white;
+    font-size: 18px;
+}
