@@ -1,13 +1,13 @@
 import React from "react";
-// import "./Footer.css"
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <>
-      <div>
+    <section className="footer-container">
+      <div className="footer-con">
         <p>© Janoi Inc.. 2024 All rights reserved.</p>
       </div>
-    </>
+    </section>
   );
 };
 

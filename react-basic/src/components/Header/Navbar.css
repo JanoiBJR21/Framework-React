@@ -1,12 +1,13 @@
 .container{
     background-color: rgba(0, 0, 0, 0.733);
 }
-.con{
+.nav-con{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 48px;
     padding: 8px;
+    
 }
 .logo{
     color: white;

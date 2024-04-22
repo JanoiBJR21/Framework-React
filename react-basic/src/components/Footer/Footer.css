@@ -1,9 +1,13 @@
+.footer-container{
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.footer-con{
+    margin: 0 48px;
+    padding: 8px;
+}
 p{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
-    margin-top: 48%;
-    background-color: black;
     color: white;
 }
