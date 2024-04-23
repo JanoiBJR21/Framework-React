@@ -9,7 +9,7 @@ const Navbar = () => {
           <div className="logo">
             <h1>Janoi</h1>
           </div>
-            <ul>
+            <ul className="menu-con">
               <li>
                 <a href="#">Home</a>
               </li>

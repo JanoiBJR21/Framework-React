@@ -1,11 +1,12 @@
 import React from "react";
 import "./Main.css";
+import MainList from "./MainList/MainList";
 
 const Main = () => {
   return (
     <section className="main-container">
       <div className="main-con">
-        <div>Main</div>
+        <MainList/>
       </div>
     </section>
   );

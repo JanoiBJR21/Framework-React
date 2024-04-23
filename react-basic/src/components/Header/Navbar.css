@@ -15,15 +15,15 @@
     font-weight: 700;
     cursor: pointer;
 }
-ul{
+.menu-con{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-li{
+.menu-con li{
     margin: 12px;
 }
-a{
+.menu-con li a{
     color: white;
     font-size: 18px;
 }
