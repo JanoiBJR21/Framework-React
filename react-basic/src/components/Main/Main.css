@@ -1,8 +1,12 @@
 .main-container{
-    background-color: rgba(255, 242, 242, 0.473);
+    background-color: #f7f7f7;
 }
 .main-con{
     height: 100vh;
     margin: 0 48px;
     padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

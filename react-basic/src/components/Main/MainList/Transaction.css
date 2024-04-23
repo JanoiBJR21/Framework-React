@@ -2,3 +2,14 @@
     padding: 0;
     margin: 20px 0;
 }
+.item-list li{
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    position: relative;
+}
+    

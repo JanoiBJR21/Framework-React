@@ -6,7 +6,7 @@ import Transaction from "./Transaction";
 const MainList = () => {
   const designh1 = {color: "red", fontSize: "25px", textAlign: "center" }
   return (
-    <section>
+    <section className="mainList-container">
       <h1 style={designh1}>
         โปรแกรมบัญชีรายรคับ - รายจ่าย
       </h1>
