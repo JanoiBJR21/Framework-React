@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainList.css";
 import Transaction from "./Transaction";
+import Form from "../Form/Form";
 
 
 const MainList = () => {
@@ -10,6 +11,7 @@ const MainList = () => {
       <h1 style={designh1}>
         โปรแกรมบัญชีรายรคับ - รายจ่าย
       </h1>
+      <Form/>
       <Transaction />
     </section>
   );
