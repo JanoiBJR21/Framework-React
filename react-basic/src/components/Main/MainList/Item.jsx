@@ -1,5 +1,6 @@
 import React from "react";
-const Item = ({title, amount}) => {
+const Item = (props) => {
+  const {title, amount} = props
   return (
     <li>
       {title}<span>{amount}</span>
