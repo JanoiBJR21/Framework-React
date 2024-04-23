@@ -1,0 +1,37 @@
+label{
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: 700;
+}
+input{
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    display: block;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+}
+input:focus{
+    outline-color: green ;
+}
+.btn-control{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.btn-control .btn{
+    margin-top: 18px;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 2px;
+}
+.btn-control .btn:hover{
+    background-color: blue;
+    transition: all 0.5s ease;
+}
