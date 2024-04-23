@@ -1,9 +1,11 @@
 import React from "react";
 
 const Item = () => {
+  const name = "เดีนห้างซื้อของ"
+  const amount = "-2000"
   return (
     <li>
-      ค่าที่พัก <span>2000</span>
+      {name} <span>{amount}</span>
     </li>
   );
 };
