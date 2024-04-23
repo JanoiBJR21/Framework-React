@@ -1,10 +1,8 @@
 import React from "react";
-const Item = () => {
-  const name = "เดีนห้างซื้อของ"
-  const amount = "-2000"
+const Item = (props) => {
   return (
     <li>
-      {name} <span>{amount}</span>
+      {props.title}<span>{props.amount}</span>
     </li>
   );
 };
