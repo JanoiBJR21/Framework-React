@@ -6,11 +6,11 @@ import Form from "../Form/Form";
 const MainList = () => {
   const designh1 = { color: "red", fontSize: "25px", textAlign: "center" };
 
-  const initdata = [
-    { id: 1, title: "ค่ารักษาพยาบาล", amount: 2000 },
-    { id: 2, title: "ค่าเช่าบ้าน", amount: 9000 },
-    { id: 3, title: "เงินเดือน", amount: 35000 },
-  ];
+  // const initdata = [
+  //   { id: 1, title: "ค่ารักษาพยาบาล", amount: 2000 },
+  //   { id: 2, title: "ค่าเช่าบ้าน", amount: 9000 },
+  //   { id: 3, title: "เงินเดือน", amount: 35000 },
+  // ];
 
   const [items, setItems] = useState([]);
 
