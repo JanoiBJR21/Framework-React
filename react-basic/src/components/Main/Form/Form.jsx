@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { v4 as uuidv4 } from "uuid";
 
-const Form = () => {
+const Form = (props) => {
   const [title, setTiltle] = useState("");
   const [amount, setAmount] = useState(0);
 
@@ -19,13 +20,15 @@ const Form = () => {
     e.preventDefault();
     // console.log("บันทึกข้อมูลเรียบร้อย");
     const itemData = {
+      id: uuidv4(),
       title: title,
-      amount: Number(amount),//แปลงข้อมูลจาก String To Number
+      amount: Number(amount), //แปลงข้อมูลจาก String To Number
     };
-    console.log(itemData);
+    // console.log(itemData);
+    props.onAddItem(itemData)
     // เมื่อเพิ่มข้อมูลแล้ว ให้ set เป็นค่าเริ่มต้น
-    setTiltle("")
-    setAmount(0)
+    setTiltle("");
+    setAmount(0);
   };
   return (
     <div>
@@ -35,7 +38,8 @@ const Form = () => {
           <input
             type="text"
             placeholder="ระบุชื่อรายการารของคุณ"
-            onChange={inputTitle} value={title}
+            onChange={inputTitle}
+            value={title}
           />
         </div>
         <div className="form-control">
@@ -43,7 +47,8 @@ const Form = () => {
           <input
             type="number"
             placeholder="(+ รายรับ , - รายจ่าย)"
-            onChange={inputAmount} value={amount}
+            onChange={inputAmount}
+            value={amount}
           />
         </div>
         <div className="btn-control">
