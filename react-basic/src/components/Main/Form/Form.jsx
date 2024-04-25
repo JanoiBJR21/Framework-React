@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
 import { v4 as uuidv4 } from "uuid";
 
 const Form = (props) => {
+  console.log("Render Form");
   const [title, setTiltle] = useState("");
   const [amount, setAmount] = useState(0);
+  const [formValid, setFormValid] = useState(false);
 
   const inputTitle = (e) => {
     // console.log(e.target.value);
@@ -25,11 +27,18 @@ const Form = (props) => {
       amount: Number(amount), //แปลงข้อมูลจาก String To Number
     };
     // console.log(itemData);
-    props.onAddItem(itemData)
+    props.onAddItem(itemData);
     // เมื่อเพิ่มข้อมูลแล้ว ให้ set เป็นค่าเริ่มต้น
     setTiltle("");
     setAmount(0);
   };
+
+  useEffect(() => {
+    // console.log("call useEffect");
+    const checkData = title.trim().length > 0 && amount !== 0;
+      setFormValid(checkData);
+  }, [title, amount]);
+
   return (
     <div>
       <form onSubmit={seveItem}>
@@ -52,7 +61,7 @@ const Form = (props) => {
           />
         </div>
         <div className="btn-control">
-          <button type="submit" className="btn">
+          <button type="submit" className="btn" disabled={!formValid}>
             เพิ่มข้อมูล
           </button>
         </div>
