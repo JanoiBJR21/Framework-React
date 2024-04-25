@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Form.css";
 
 const Form = () => {
+  const [title, setTiltle] = useState("");
+  const [amount, setAmount] = useState(0);
+
   const inputTitle = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
+    setTiltle(e.target.value);
   };
 
   const inputAmount = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
+    setAmount(e.target.value);
   };
 
   const seveItem = (e) => {
-    e.preventDefault()
-    console.log("บันทึกข้อมูลเรียบร้อย");
+    e.preventDefault();
+    // console.log("บันทึกข้อมูลเรียบร้อย");
+    const itemData = {
+      title: title,
+      amount: Number(amount),//แปลงข้อมูลจาก String To Number
+    };
+    console.log(itemData);
+    // เมื่อเพิ่มข้อมูลแล้ว ให้ set เป็นค่าเริ่มต้น
+    setTiltle("")
+    setAmount(0)
   };
   return (
     <div>
@@ -22,15 +35,15 @@ const Form = () => {
           <input
             type="text"
             placeholder="ระบุชื่อรายการารของคุณ"
-            onChange={inputTitle}
+            onChange={inputTitle} value={title}
           />
         </div>
         <div className="form-control">
-          <label>จำนววนเงิน :</label>
+          <label>จำนวนเงิน :</label>
           <input
             type="number"
             placeholder="(+ รายรับ , - รายจ่าย)"
-            onChange={inputAmount}
+            onChange={inputAmount} value={amount}
           />
         </div>
         <div className="btn-control">
