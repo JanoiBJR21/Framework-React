@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./Item.css"
+import "./Item.css";
+import DataContext from "../../../data/DataContext";
 
 const Item = (props) => {
   const { title, amount } = props;
@@ -10,7 +11,11 @@ const Item = (props) => {
   return (
     <li className={status}>
       {title}
-      <span>{symbol}{Math.abs(amount)}</span>
+      <span>
+        {symbol}
+        {Math.abs(amount)}
+      </span>
+      <DataContext.Consumer>{(value) => <p>{value}</p>}</DataContext.Consumer>
     </li>
   );
 };

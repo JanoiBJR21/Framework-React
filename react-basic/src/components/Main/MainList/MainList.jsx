@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./MainList.css";
 import Transaction from "./Transaction";
 import Form from "../Form/Form";
+import DataContext from "../../../data/DataContext";
 
 const MainList = () => {
   const designh1 = { color: "red", fontSize: "25px", textAlign: "center" };
@@ -22,11 +23,13 @@ const MainList = () => {
   };
 
   return (
-    <section className="mainList-container">
-      <h1 style={designh1}>โปรแกรมบัญชีรายรคับ - รายจ่าย</h1>
-      <Form onAddItem={onAddNewItem} />
-      <Transaction item={items} />
-    </section>
+    <DataContext.Provider value={"Apichat"}>
+      <section className="mainList-container">
+        <h1 style={designh1}>โปรแกรมบัญชีรายรคับ - รายจ่าย</h1>
+        <Form onAddItem={onAddNewItem} />
+        <Transaction item={items} />
+      </section>
+    </DataContext.Provider>
   );
 };
 
