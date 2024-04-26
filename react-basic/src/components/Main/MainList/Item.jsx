@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import "./Item.css";
-import DataContext from "../../../data/DataContext";
 
 const Item = (props) => {
   const { title, amount } = props;
   const status = amount < 0 ? "expense" : "income";
   const symbol = amount < 0 ? "-" : "+";
-  const name = useContext(DataContext)
 
   return (
     <li className={status}>
@@ -16,7 +14,6 @@ const Item = (props) => {
         {symbol}
         {Math.abs(amount)}
       </span>
-      {name}
     </li>
   );
 };

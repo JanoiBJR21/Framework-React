@@ -3,10 +3,9 @@ import "./Transaction.css";
 import DataContext from "../../../data/DataContext";
 import { useContext } from "react";
 
-
 const Transaction = (props) => {
   const { items } = props;
-  const name = useContext(DataContext)
+  const { income, expense } = useContext(DataContext);
 
   return (
     <div>
@@ -15,7 +14,8 @@ const Transaction = (props) => {
           return <Item {...element} key={element.id} />;
         })}
       </ul>
-      {name}
+      <p>รายรับ : {income}</p>
+      <p>รายจ่าย : {expense}</p>
     </div>
   );
 };

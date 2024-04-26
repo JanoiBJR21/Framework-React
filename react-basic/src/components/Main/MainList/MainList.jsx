@@ -24,10 +24,15 @@ const MainList = () => {
   };
 
   return (
-    <DataContext.Provider value={"Apichat"}>
+    <DataContext.Provider
+      value={{
+        income: 50000,
+        expense: -8000,
+      }}
+    >
       <section className="mainList-container">
         <h1 style={designh1}>โปรแกรมบัญชีรายรคับ - รายจ่าย</h1>
-        <Report/>
+        <Report />
         <Form onAddItem={onAddNewItem} />
         <Transaction items={items} />
       </section>
