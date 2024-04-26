@@ -6,18 +6,18 @@ import DataContext from "../../../data/DataContext";
 import Report from "./Report";
 
 const MainList = () => {
-  const designh1 = { color: "red", fontSize: "25px", textAlign: "center" };
+  const designh1 = { color: "red", fontSize: "25px", textAlign: "center",};
 
   // ตัวอย่าง Item รายการ รายรับ , รายจ่าย
-  // const initdata = [
-  //   { id: 1, title: "ค่ารักษาพยาบาล", amount: -2000 },
-  //   { id: 2, title: "ค่าเช่าบ้าน", amount: -9000 },
-  //   { id: 3, title: "เงินเดือน", amount: 35000 },
-  //   { id: 4, title: "ค่าเดินทาง", amount: -800 },
-  //   { id: 5, title: "โบนัส", amount: 15000 },
-  // ];
+  const initdata = [
+    { id: 1, title: "ค่ารักษาพยาบาล", amount: -2000 },
+    { id: 2, title: "ค่าเช่าบ้าน", amount: -9000 },
+    { id: 3, title: "เงินเดือน", amount: 35000 },
+    { id: 4, title: "ค่าเดินทาง", amount: -800 },
+    { id: 5, title: "โบนัส", amount: 15000 },
+  ];
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(initdata);
   // console.log(items);
   const [reportIcome, setReportIcome] = useState(0);
   const [reportExpense, setReportExpense] = useState(0);

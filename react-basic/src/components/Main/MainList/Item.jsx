@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import "./Item.css";
+import numeral from "numeral";
 
 const Item = (props) => {
   const { title, amount } = props;
@@ -11,8 +12,9 @@ const Item = (props) => {
     <li className={status}>
       {title}
       <span>
-        {symbol}
-        {Math.abs(amount)}
+      {symbol}
+        {/* {Math.abs(amount)} */}
+        {numeral(Math.abs(amount)).format("0, 0.00")}
       </span>
     </li>
   );

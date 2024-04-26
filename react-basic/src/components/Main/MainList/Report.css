@@ -1,0 +1,46 @@
+.report-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    /* margin: 15px 0; */
+}
+.report-container>div{
+    flex: 1;
+    text-align: center;
+}
+/* .report-container h4{
+    font-size: 18px;
+} */
+.report-container>div:first-of-type{
+    border-right: 1px solid #dedede;
+}
+.report{
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+    margin: 10px 0;
+}
+.report.plus{
+    color: green;
+    font-weight: 700;
+}
+.report.minus{
+    color: red;
+    font-weight: 700;
+}
+.report-total{
+    text-align: center;
+    background-color: white;
+    padding-bottom: 2px;
+}
+.report-total h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.report-total h1{
+    font-size: 20px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    color: blue;
+    margin-top: 5px;
+}
