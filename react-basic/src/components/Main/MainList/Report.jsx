@@ -13,8 +13,8 @@ const Report = () => {
       </DataContext.Consumer> */}
 
       {/* การเรียกใช้งานแบบ useContext */}
-      <p>รายรับ : {income}</p>
-      <p>รายจ่าย : {expense}</p>
+      <p>รายรับทั้งหมด : {income}</p>
+      <p>รายจ่ายทั้งหมด : {expense}</p>
     </div>
   );
 };

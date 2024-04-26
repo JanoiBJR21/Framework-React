@@ -3,7 +3,7 @@ import "./Form.css";
 import { v4 as uuidv4 } from "uuid";
 
 const Form = (props) => {
-  console.log("Render Form");
+  // console.log("Render Form");
   const [title, setTiltle] = useState("");
   const [amount, setAmount] = useState(0);
   const [formValid, setFormValid] = useState(false);
