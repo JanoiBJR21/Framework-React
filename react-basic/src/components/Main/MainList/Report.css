@@ -17,7 +17,7 @@
 }
 .report{
     font-size: 20px;
-    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
     margin: 10px 0;
 }
 .report.plus{
@@ -40,7 +40,7 @@
 .report-total h1{
     font-size: 20px;
     font-weight: 700;
-    /* letter-spacing: 1px; */
+    letter-spacing: 1px;
     color: blue;
     margin-top: 5px;
 }
